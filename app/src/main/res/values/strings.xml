@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">Worker Sample</string>
+
+    <string name="logWorkChannelName">Log Work</string>
+    <string name="logWorkChannelDescription">Notification about Log Work</string>
+    <string name="logWorkNotificationTitle">Running Log Work</string>
+    <string name="logWorkNotificationText">Please wait…</string>
+
+    <string name="logWorkMessage">Log Work finished with delay of %d milliseconds</string>
+
+    <string name="offline">You\'re offline</string>
+    <string name="workWillNotRunWithoutConnection">%s will not run without connection</string>
+
+    <string name="workRunning">%s running</string>
+    <string name="workEnqueued">%s enqueued</string>
+
+    <string name="repeatTimeInMinutes">Repeat time is %d minutes</string>
+
+    <string name="noLogsToBeDisplayed">No Logs to be displayed</string>
+
+</resources>
