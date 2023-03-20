@@ -55,7 +55,7 @@ private val workConstraints
         .setRequiredNetworkType(NetworkType.CONNECTED)
         .build()
 
-private val logWorkRequest: PeriodicWorkRequest =
+private val workRequest: PeriodicWorkRequest =
     PeriodicWorkRequestBuilder<LogWork>(LOG_WORK_INTERVAL, TimeUnit.MINUTES)
         .setConstraints(workConstraints)
         .build()
@@ -65,7 +65,7 @@ fun Context.enqueueLogWork() {
         enqueueUniquePeriodicWork(
             LogWork.workName,
             ExistingPeriodicWorkPolicy.KEEP,
-            logWorkRequest
+            workRequest
         )
     }
 }
